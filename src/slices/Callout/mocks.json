@@ -1,0 +1,159 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"im3": {
+				"origin": {
+					"id": "xnRg3xDcNnE",
+					"url": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxmcnVpdHxlbnwwfHx8fDE2OTcwOTcyMTh8MA&ixlib=rb-4.0.3&q=85",
+					"width": 7173,
+					"height": 10041
+				},
+				"url": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxmcnVpdHxlbnwwfHx8fDE2OTcwOTcyMTh8MA&ixlib=rb-4.0.3&q=85&rect=0%2C0%2C7172%2C10041&w=1000&h=1400",
+				"width": 1000,
+				"height": 1400,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Proident quis adipisicing ipsum excepteur aliqua laborum id esse officia nulla labore do aliquip."
+									}
+								}
+							]
+						}
+					],
+					[
+						"location",
+						{
+							"position": {
+								"lat": 48.8606111,
+								"lng": 2.337644
+							},
+							"__TYPE__": "GeoPointContent"
+						}
+					],
+					[
+						"num",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "61",
+							"type": "Number"
+						}
+					],
+					[
+						"imges",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+								"width": 4000,
+								"height": 6000
+							},
+							"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?rect=0%2C1400%2C4000%2C3200&w=500&h=400",
+							"width": 500,
+							"height": 400,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 1400
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {
+								"second": {
+									"origin": {
+										"id": "second",
+										"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+										"width": 5848,
+										"height": 3899
+									},
+									"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?rect=487%2C0%2C4874%2C3899&w=500&h=400",
+									"width": 500,
+									"height": 400,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 487,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null
+								},
+								"third": {
+									"origin": {
+										"id": "third",
+										"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+										"width": 3024,
+										"height": 3778
+									},
+									"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?rect=0%2C679%2C3024%2C2419&w=500&h=400",
+									"width": 500,
+									"height": 400,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 679
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null
+								},
+								"fourth": {
+									"origin": {
+										"id": "fourth",
+										"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+										"width": 3344,
+										"height": 2509
+									},
+									"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?rect=104%2C0%2C3136%2C2509&w=500&h=400",
+									"width": 500,
+									"height": 400,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 104,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null
+								}
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]

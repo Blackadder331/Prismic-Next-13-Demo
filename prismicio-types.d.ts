@@ -189,6 +189,96 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
+ * Primary content in *Callout → Primary*
+ */
+export interface CalloutSliceDefaultPrimary {
+  /**
+   * img3 field in *Callout → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: callout.primary.im3
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  im3: prismic.ImageField<never>;
+}
+
+/**
+ * Primary content in *Callout → Items*
+ */
+export interface CalloutSliceDefaultItem {
+  /**
+   * text field in *Callout → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Rich text editor
+   * - **API ID Path**: callout.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+
+  /**
+   * location field in *Callout → Items*
+   *
+   * - **Field Type**: GeoPoint
+   * - **Placeholder**: *None*
+   * - **API ID Path**: callout.items[].location
+   * - **Documentation**: https://prismic.io/docs/field#geopoint
+   */
+  location: prismic.GeoPointField;
+
+  /**
+   * num field in *Callout → Items*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: 9,500
+   * - **API ID Path**: callout.items[].num
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  num: prismic.NumberField;
+
+  /**
+   * imges field in *Callout → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: callout.items[].imges
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imges: prismic.ImageField<"second" | "third" | "fourth">;
+}
+
+/**
+ * Default variation for Callout Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CalloutSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<CalloutSliceDefaultPrimary>,
+  Simplify<CalloutSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Callout*
+ */
+type CalloutSliceVariation = CalloutSliceDefault;
+
+/**
+ * Callout Shared Slice
+ *
+ * - **API ID**: `callout`
+ * - **Description**: Callout
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CalloutSlice = prismic.SharedSlice<
+  "callout",
+  CalloutSliceVariation
+>;
+
+/**
  * Primary content in *Hero → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -669,29 +759,46 @@ declare module "@prismicio/client" {
     export type {
       NavigationDocument,
       NavigationDocumentData,
+      NavigationDocumentDataLinksItem,
       PageDocument,
       PageDocumentData,
+      PageDocumentDataSlicesSlice,
       SettingsDocument,
       SettingsDocumentData,
       AllDocumentTypes,
+      CalloutSlice,
+      CalloutSliceDefaultPrimary,
+      CalloutSliceDefaultItem,
+      CalloutSliceVariation,
+      CalloutSliceDefault,
       HeroSlice,
+      HeroSliceDefaultPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
       ImageSlice,
+      ImageSliceDefaultPrimary,
+      ImageSliceBannerPrimary,
       ImageSliceVariation,
       ImageSliceDefault,
       ImageSliceBanner,
       ImageCardsSlice,
+      ImageCardsSliceDefaultPrimary,
+      ImageCardsSliceDefaultItem,
       ImageCardsSliceVariation,
       ImageCardsSliceDefault,
       QuoteSlice,
+      QuoteSliceDefaultPrimary,
       QuoteSliceVariation,
       QuoteSliceDefault,
       TextSlice,
+      TextSliceDefaultPrimary,
+      TextSliceTwoColumnsPrimary,
       TextSliceVariation,
       TextSliceDefault,
       TextSliceTwoColumns,
       TextWithImageSlice,
+      TextWithImageSliceDefaultPrimary,
+      TextWithImageSliceWithButtonPrimary,
       TextWithImageSliceVariation,
       TextWithImageSliceDefault,
       TextWithImageSliceWithButton,

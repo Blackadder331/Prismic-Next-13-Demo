@@ -1,0 +1,79 @@
+{
+  "id": "callout",
+  "type": "SharedSlice",
+  "name": "Callout",
+  "description": "Callout",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "im3": {
+          "type": "Image",
+          "config": {
+            "label": "img3",
+            "constraint": {
+              "width": 1000
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "text",
+            "placeholder": "Rich text editor",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "location": {
+          "type": "GeoPoint",
+          "config": {
+            "label": "location"
+          }
+        },
+        "num": {
+          "type": "Number",
+          "config": {
+            "label": "num",
+            "placeholder": "9,500"
+          }
+        },
+        "imges": {
+          "type": "Image",
+          "config": {
+            "label": "imges",
+            "constraint": {
+              "width": 500,
+              "height": 400
+            },
+            "thumbnails": [
+              {
+                "name": "second",
+                "width": 500,
+                "height": 400
+              },
+              {
+                "name": "third",
+                "width": 500,
+                "height": 400
+              },
+              {
+                "name": "fourth",
+                "width": 500,
+                "height": 400
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
